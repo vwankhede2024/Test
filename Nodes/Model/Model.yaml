@@ -1,0 +1,43 @@
+Name: Model
+Id: g=82c881431d34512c5675adf1567630d0
+Type: ModelCategoryFolder
+Children:
+- Name: LED
+  Id: g=196540e6b5ac140486147089d6e5e42c
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Variable1
+  Id: g=5f7d4638dfa508e35f1320fbcbcb2db1
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Motor1
+  Id: g=bb443281d9b32b2e44900eefec70ca40
+  Type: BaseObjectType
+  Children:
+  - Name: Temp
+    Id: g=edfabc7af47dd94a6031e282632d80b9
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: RPM
+    Id: g=2649de9ed57a0158befa0aa19c2a6429
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- Name: Alarm1_Bool
+  Id: g=2fa80633b70158f0d5b4f5d93b97400c
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Alarm2_Int
+  Id: g=ff118e4aa4b6db75509a003797267b86
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: ODBC_Test
+  Id: g=4c176c145e325b5339cb97b5c77ce443
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0

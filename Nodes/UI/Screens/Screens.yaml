@@ -1,0 +1,112 @@
+Name: Screens
+Id: g=2c3040ce18fc7d5533d9dafbb3564906
+Type: FolderType
+Children:
+- Name: Panel1
+  Id: g=1fcabc92402cfed5b154fa08386aed0e
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Id: g=08f217a29a99e5c40c9a25611690bf4a
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Height
+    Id: g=f9ec683be7eecb6b1a666503346033ea
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Label1
+    Id: g=639a19df75f65c7e34625bd899dcdff2
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=bbe24fc4550e07dcb03d744f33391380
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Panel-1"}
+    - Name: LeftMargin
+      Id: g=cbfa6a46ecc624fe3bc0608ac7bb3705
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: TopMargin
+      Id: g=25e7137fd015b0f2c77b98e3ad575480
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 35.0
+    - Name: HorizontalAlignment
+      Id: g=efc2898e9e579309ce2d4a71fe3bfc18
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: VerticalAlignment
+      Id: g=021f56cd5684a1404a9ffc85e7e60cbe
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 0
+- Name: Panel2
+  Id: g=1624e2d8b89d4ef5a0049bf97a3b1e81
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Id: g=eaaced309fc889b769fd95697a79fdb5
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Height
+    Id: g=4ffe85123368a306f241a37c95515651
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Label1
+    Id: g=ed878543a5b4e8fad8e0d16b1531785c
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=ac360dfd2be115693551b40f740b812e
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Panel-2"}
+    - Name: LeftMargin
+      Id: g=2d2639d5b47293f969185f445f6f9f1b
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: -1.0
+    - Name: TopMargin
+      Id: g=0568b7838ac8cf5b00e8ebb290a311ff
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 35.0
+    - Name: HorizontalAlignment
+      Id: g=2b78238f4e537648a99a170ea258ed5f
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: VerticalAlignment
+      Id: g=adb19a8b1c0c784539f34724193bef0f
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 0
+    - Name: RightMargin
+      Id: g=108ce8933626ed240dfae609ecb6de74
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0

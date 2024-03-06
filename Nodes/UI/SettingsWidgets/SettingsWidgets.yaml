@@ -1,0 +1,1273 @@
+Name: SettingsWidgets
+Id: g=dcd706ad77c08dbf9d13e0f61ec9467a
+Type: FolderType
+Children:
+- File: NetworkSettingsWidget/NetworkSettingsWidget.yaml
+- File: DeviceSettingsWidget/DeviceSettingsWidget.yaml
+- Name: DateAndTimeWidget
+  Id: g=dfd608856ac9169edc3dd3847ce7f7bc
+  Supertype: Screen
+  ReferenceType: HasComponent
+  Children:
+  - Name: TimeSynchronizationMode
+    Id: g=7f36ae62bf2b3d4d7fd2786e19d159f0
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=5cd195b62feeeac0eefb878b3f7b9a83
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":18,"TextId":"TimeSynchronizationMode"}
+    - Name: LeftMargin
+      Id: g=f34121b58f930b507fc6b5a36dd6fb84
+      Type: BaseVariableType
+      DataType: Size
+      Value: 18.0
+    - Name: TopMargin
+      Id: g=01fe656fb8f39d0a67e149c748a3ad68
+      Type: BaseVariableType
+      DataType: Size
+      Value: 10.0
+    - Name: TextHorizontalAlignment
+      Id: g=89d73e5d1a3cb6db0853e5827ff379ed
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      Value: 0
+  - Name: SynchronizationAutoMode
+    Id: g=bb8a1a9f44357e6a6c33d9b8d120c752
+    Type: RadioButton
+    Children:
+    - Name: Checked
+      Id: g=cd00e1377ba4416f614bc567e7d16c19
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: Text
+      Id: g=69e84081815373000fce8e3c9e5f8e9d
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":18,"TextId":"AutoMode"}
+    - Name: LeftMargin
+      Id: g=077dbf8d5a4e208347801c9274170df7
+      Type: BaseVariableType
+      DataType: Size
+      Value: 18.0
+    - Name: TopMargin
+      Id: g=82cd92b8c3b3ed8726a458debfef6667
+      Type: BaseVariableType
+      DataType: Size
+      Value: 28.0
+    - Name: ModifiedValueHandler1
+      Id: g=96db0ce740420dcdc39733e3521f7062
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Id: g=84332453c3c278180cc5c1172023568a
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":690,"Namespace":5}
+      - Name: MethodsToCall
+        Id: g=37d54d061baf87191ee5c41a42beda78
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Id: g=c02561326f40c4f20ef04c263dd11bb7
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Id: g=47ec9b79f9438b563eddf74973e6ef75
+            Type: NodePointer
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+            Children:
+            - Name: Kind
+              Id: g=6dce31cf0cc8fcc93d1ae1e6436edfa9
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"Id":58}
+            - Name: DynamicLink
+              Id: g=38d60360f4d7aac08ed8074b55244286
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../DateAndTimeWidgetLogic@NodeId"
+              Children:
+              - Name: Mode
+                Id: g=df548b252cbd432582e7f376fed5d30f
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: ns=3;Method
+            Id: g=7f450c4dc421225048ecaa6b4a57283f
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "SynchronizationModeChanged"
+      - Name: EventArguments
+        Id: g=5b75cb69c4cdb65fe4c662c16277cd4b
+        Type: UserValueChanged
+        Children:
+        - Name: NewValue
+          Id: g=b243ca3d12a2a2359f107c60060b9868
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+        - Name: EventId
+          Id: g=3a0f587d0981ce2d112b2bad9fae8148
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Id: g=7c87ed9b7e69ab0b3bbd03dcad265e64
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Id: g=26439a80344ec34c4acb4638f48ae3f0
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Id: g=296f3844bc6864b9d6524901b99e4504
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Id: g=4d12cb0ea1497e311de631b5cae3dd81
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Id: g=005ebb9ca9bd0bb67d74b658d77bf58d
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Id: g=027fffd29f321f4f6206f8eb2329c37a
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Id: g=2659ac586726c6484da9f753dd1ca4c9
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
+  - Name: SynchronizationManualMode
+    Id: g=f07fc7e23f42ba5032d69b90f433b548
+    Type: RadioButton
+    Children:
+    - Name: Checked
+      Id: g=83a8ff49433477806ecd159352585f15
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: Text
+      Id: g=e03ef60b08727a5e55383607df0d06f9
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":18,"TextId":"ManualMode"}
+    - Name: LeftMargin
+      Id: g=856bdf3710b78cb1afc5975ee71a67e0
+      Type: BaseVariableType
+      DataType: Size
+      Value: 240.0
+    - Name: TopMargin
+      Id: g=177003ebdbe713b6b5fa07082b689f63
+      Type: BaseVariableType
+      DataType: Size
+      Value: 28.0
+  - Name: RemoteNTPServer
+    Id: g=8d1993809fdd3f461fe72fe193864543
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=249f0c0173632e3a88f937900c0dff0a
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":18,"TextId":"RemoteNTPServer"}
+    - Name: LeftMargin
+      Id: g=238375ded80f9227c346ecd2fef1cb41
+      Type: BaseVariableType
+      DataType: Size
+      Value: 18.0
+    - Name: TopMargin
+      Id: g=e2c54a041b5d529d1b53edb351c154f7
+      Type: BaseVariableType
+      DataType: Size
+      Value: 54.0
+  - Name: RemoteNTPServerTextBox
+    Id: g=0ef640d48277219baafa70c2eb1d2802
+    Type: TextBox
+    Children:
+    - Name: Text
+      Id: g=101e841d278274c2b34aa0920711a30c
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: DynamicLink
+        Id: g=2dec84dcc3463927245a58c72946b3ad
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../SystemNode/DateAndTime/RemoteNTPServer"
+        Children:
+        - Name: Mode
+          Id: g=d5409df966b3b06670c48098d8dc216b
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: Width
+      Id: g=3651464e69dc9ebb502ae205c5e69f0d
+      Type: BaseVariableType
+      DataType: Size
+      Value: 364.0
+    - Name: LeftMargin
+      Id: g=0385affdaedca74a29a0131910885a98
+      Type: BaseVariableType
+      DataType: Size
+      Value: 18.0
+    - Name: TopMargin
+      Id: g=329787d53ad7ab61383bacdd6e36f1a1
+      Type: BaseVariableType
+      DataType: Size
+      Value: 74.0
+    - Name: Height
+      Id: g=39a3485a555000a87be81ee48961a1d8
+      Type: BaseVariableType
+      DataType: Size
+      Value: 28.0
+    - Name: Enabled
+      Id: g=5ac185d5f6edb216bd277feeb34a8e29
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink
+        Id: g=d15ab0eabd316068d2057b5ee6dd92e6
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../SynchronizationAutoMode/Checked"
+  - Name: TimeZone
+    Id: g=27933aa8acb3df02f45dffacdebab9f4
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=9c4a62c7e51f3d3f641b91c199fd4e3e
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":18,"TextId":"TimeZone"}
+    - Name: LeftMargin
+      Id: g=68bf4863d413369bebc9cb8e981f8278
+      Type: BaseVariableType
+      DataType: Size
+      Value: 20.0
+    - Name: TopMargin
+      Id: g=aee50c41da725862f79ea7742db8872a
+      Type: BaseVariableType
+      DataType: Size
+      Value: 105.0
+  - Name: TimeZoneComboBox
+    Id: g=70aa61b53ee3672e2a60d8627206582b
+    Type: ComboBox
+    Children:
+    - Name: Text
+      Id: g=fbf7d71b64bb81ab8326b52615908c46
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: Model
+      Id: g=96df489d96756f477069703ff536e8f7
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: ItemKind
+        Id: g=e1c8cfb838f6fbd12fa44cf68b213cc2
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: Kind
+        Id: g=1bae802f2392e28177792614b0ca7aaf
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: DynamicLink
+        Id: g=f985fde991f258d23648f73a2b184153
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../TimeZonesEnumeration@NodeId"
+    - Name: SelectedValue
+      Id: g=bf0fa6e1261e251e268890c2bb470613
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+    - Name: SelectedItem
+      Id: g=4d50e91ff1d1c254698926933894ef8f
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: Kind
+        Id: g=4bacb15100b5f33132f2e7398c6f293d
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: UISelectedItem
+      Id: g=c3609c7112729eb9d5b2e0e442c58af7
+      Type: BaseDataVariableType
+      DataType: NodeId
+      AccessLevel: Read
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: UISelectedValue
+      Id: g=1073f9c7cd4cee51d0ce6cfef80993d2
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      AccessLevel: Read
+    - Name: Width
+      Id: g=94141143e4b458c7c089c8000bd57003
+      Type: BaseVariableType
+      DataType: Size
+      Value: 364.0
+    - Name: Item
+      Id: g=1f3fef51993586ce11a540fef1697d41
+      Type: Alias
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: Kind
+        Id: g=6f6ed40df203fa894107a6ea923f541b
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: LeftMargin
+      Id: g=238a0a8ad3c1edea3f68baceff805a84
+      Type: BaseVariableType
+      DataType: Size
+      Value: 18.0
+    - Name: TopMargin
+      Id: g=e1f0968a231a1613464e91ddaa950bfb
+      Type: BaseVariableType
+      DataType: Size
+      Value: 123.0
+    - Name: Height
+      Id: g=01938a67d976a4f3f3e2f4d6e13dfe23
+      Type: BaseVariableType
+      DataType: Size
+      Value: 28.0
+    - Name: SelectedValuePath
+      Id: g=f11444a262e57c5e741002368f88942d
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      Children:
+      - Name: DynamicLink
+        Id: g=3013d97fd7e105459bfaf1ae42150d61
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Item}@Value"
+    - Name: DisplayValuePath
+      Id: g=14cd8113fec77c7d25eef42947ebef0a
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: DynamicLink
+        Id: g=3b493139c7a1fc8713c88af68eec4444
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Item}@DisplayName"
+  - Name: TimeZonesEnumeration
+    Id: g=92eb87fe699bd6b23def2f24e4264d9a
+    Type: BaseObjectType
+  - Name: DateTime
+    Id: g=2b4703255e1cfc2ac748d32518a032d3
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=2255c7d1d538ba3df7e93c6217fc545e
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":18,"TextId":"DateAndTime"}
+    - Name: LeftMargin
+      Id: g=659fad5a33f0ac43ec13edca574e1a17
+      Type: BaseVariableType
+      DataType: Size
+      Value: 18.0
+    - Name: TopMargin
+      Id: g=83760abd93257227d21780a26dbadddf
+      Type: BaseVariableType
+      DataType: Size
+      Value: 158.0
+    - Name: WordWrap
+      Id: g=d01a3090335024125d1517ba7fdb1606
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+      Value: true
+  - Name: DateTimeInput
+    Id: g=164700a3b8d5500b1a4816ba605aefd6
+    Type: DateTimePicker
+    Children:
+    - Name: Value
+      Id: g=13c037966f85c12b5bd02e8913b02f97
+      Type: BaseDataVariableType
+      DataType: DateTime
+      Value: "1601-01-01T00:00:00.0000000"
+      Children:
+      - Name: DynamicLink
+        Id: g=6ef868e1b7402cceb9188fac09bfe697
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../SystemNode/DateAndTime/DateTime"
+        Children:
+        - Name: Mode
+          Id: g=3a5a0dcb6411683d3638b73b53adb4d4
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: LeftMargin
+      Id: g=c89a7ed1059fbd7f7d10dc79aeb61a93
+      Type: BaseVariableType
+      DataType: Size
+      Value: 18.0
+    - Name: TopMargin
+      Id: g=bd5bdfe17c2f46caacbf8a8bd3a4260f
+      Type: BaseVariableType
+      DataType: Size
+      Value: 176.0
+    - Name: Width
+      Id: g=952d46244a5dd32b9b91799e5ff0da1a
+      Type: BaseVariableType
+      DataType: Size
+      Value: 171.0
+    - Name: Height
+      Id: g=74063ef23bfb1bd08fa32a4ef4cedbc9
+      Type: BaseVariableType
+      DataType: Size
+      Value: 28.0
+    - Name: TextVerticalAlignment
+      Id: g=5e88a6773a3d898eda600b3951e31356
+      Type: BaseVariableType
+      DataType: TextVerticalAlignment
+      Value: 1
+    - Name: Enabled
+      Id: g=f79d48f28bd514be61e3e0a2d813c7fa
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink
+        Id: g=04ae3c4d2573ab1c3f272b825242efcf
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../SynchronizationManualMode/Checked"
+  - Name: LocalNTPServerInterfaces
+    Id: g=8338484d7eaa84844e88db8634670ffb
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=2781f2009560f0cd25e6ac17a4bed1b8
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":18,"TextId":"LocalNTPServerInterfaces"}
+    - Name: LeftMargin
+      Id: g=f56f4f31d3b26bccd1036b316cbb6c91
+      Type: BaseVariableType
+      DataType: Size
+      Value: 210.0
+    - Name: TopMargin
+      Id: g=b65cdc3ce4057f930691f754e6341604
+      Type: BaseVariableType
+      DataType: Size
+      Value: 158.0
+  - Name: LocalNTPServerLANCheckbox
+    Id: g=78f93c3d2b4f63e54ca90f84e1fb514f
+    Type: CheckBox
+    Children:
+    - Name: Checked
+      Id: g=33b5d1d86507746326c148ae44558cff
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: Text
+      Id: g=edda8e74f30f6d3e2ee9f58b139e5cb9
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":18,"TextId":"LAN"}
+    - Name: LeftMargin
+      Id: g=1e3ffb8d2245e8b944d3cc0fe4b42926
+      Type: BaseVariableType
+      DataType: Size
+      Value: 211.0
+    - Name: TopMargin
+      Id: g=a8c6597dd5d8311718bc252f93fcc61d
+      Type: BaseVariableType
+      DataType: Size
+      Value: 180.0
+    - Name: ModifiedValueHandler1
+      Id: g=f0d21980cf3f5994978a852f86e6d5f7
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Id: g=e5751d05ff1a1b34db13eba7db3fa6a9
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":690,"Namespace":11}
+      - Name: MethodsToCall
+        Id: g=7c192a821d880dfde147b44212bd4853
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Id: g=fe8915104e7595c0ca6cf27ba23367c3
+          Type: BaseObjectType
+          Children:
+          - Name: ns=6;ObjectPointer
+            Id: g=522763bbc52b101b7925aac6d4dadb82
+            Type: NodePointer
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+            Children:
+            - Name: Kind
+              Id: g=5deee6c8948a7a0a6ca324ad8b61a5e5
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"Id":58}
+            - Name: DynamicLink
+              Id: g=80fe7a262bd773d228726ea383892418
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../DateAndTimeWidgetLogic@NodeId"
+              Children:
+              - Name: Mode
+                Id: g=13e562ba5cd5a27c14844be21a886ea3
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                Value: 2
+          - Name: ns=6;Method
+            Id: g=a8e731eabc1a7aef82835d3f8876640d
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "LocalNTPServerOptionsChanged"
+      - Name: EventArguments
+        Id: g=bcfb8d5016f1d46e7d9af53bc1207104
+        Type: UserValueChanged
+        Children:
+        - Name: NewValue
+          Id: g=ade19860cac7bc5cf65354df4d5e67c2
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+        - Name: EventId
+          Id: g=0e34ab4471baaa94280db84511ca72bc
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Id: g=1a263eb887b8abf56911b12387c5e222
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Id: g=f78db21e14ae223a4e99a590e5bebc1c
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Id: g=029600fa5c48e82847ef5dc6236f80f4
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Id: g=968a2408fef9b81773aa8ea60c27b418
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Id: g=d71e36071b9eb16d817ce9fac721cff9
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Id: g=b054a5fa276f9fdae35f0e7c1b3c6d3c
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Id: g=d2f1dcdfd45444ca5f1073838ebfb635
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
+    - Name: ModifiedValueHandler2
+      Id: g=790b19b712e482ea624941eccd929386
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Id: g=8873f3c6c7f6fa5811469e8cecd604aa
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":690,"Namespace":5}
+      - Name: MethodsToCall
+        Id: g=34c0a5fb8e01f9871fa6b399d306dece
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Id: g=299fe2410375e3c4b0e9f2a4fa23538f
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Id: g=98308826916e54370e1c0e521697b930
+            Type: NodePointer
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+            Children:
+            - Name: Kind
+              Id: g=df6ce6c921b80eeb9f2621c21b2d2a2a
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"Id":58}
+            - Name: DynamicLink
+              Id: g=1f7814adff4bf7a0a1c7eceee4351080
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../DateAndTimeWidgetLogic@NodeId"
+              Children:
+              - Name: Mode
+                Id: g=58a94a42e52d3fe17618d68131c93922
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                Value: 2
+          - Name: ns=3;Method
+            Id: g=e025ea99db2240dbc8492876622bc5d0
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "LocalNTPServerOptionsChanged"
+      - Name: EventArguments
+        Id: g=601cefa13b9e9c84567b101b358d4bf6
+        Type: UserValueChanged
+        Children:
+        - Name: NewValue
+          Id: g=37e03917cea94d83fe83234dea4d430f
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+        - Name: EventId
+          Id: g=9e0a62093b8bb4e738e7362091c23ca9
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Id: g=64746acf856de517323c78e555f60e20
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Id: g=894b3e1ff6bc5b80fa49e278be00579e
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Id: g=3ad605797b816c0a9485be8be9c24a78
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Id: g=b8f8fcf660e96abee17a5cc044e7b467
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Id: g=d690c06b3b1707fddd9f78eaa8ed9398
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Id: g=ec70adbe301160beac1817590d7b5af9
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Id: g=198d51b8b233fea41c51571ed56a3553
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
+  - Name: LocalNTPServerWANCheckbox
+    Id: g=8b3c4173e58aaa62ccc7ddb08787a0e9
+    Type: CheckBox
+    Children:
+    - Name: Checked
+      Id: g=8f16ede1b23c99dcccdc31fbb77046ee
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: Text
+      Id: g=0adc0b48b141e2750b8f1878523100f4
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":18,"TextId":"WAN"}
+    - Name: LeftMargin
+      Id: g=fe6508aeedef2da1d01ee555f50c1b54
+      Type: BaseVariableType
+      DataType: Size
+      Value: 280.0
+    - Name: TopMargin
+      Id: g=287798aaf4dc52b01bf5d5e0ae0ff1eb
+      Type: BaseVariableType
+      DataType: Size
+      Value: 180.0
+    - Name: Enabled
+      Id: g=d8b15f32aa14e21a398dc1fe3116a953
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: ExpressionEvaluator1
+        Id: g=1c6eabd806f99b1888f2d184c0c5733a
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Id: g=df05b2db193bbdc8b0a5e9c5ca99ed08
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "{0}==2"
+        - Name: ns=3;Source0
+          Id: g=8f23f844c71c4df494aa5ad89f61453e
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=ecda82ae0e09383046eb8675c03687a6
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../SystemNode/Device/EthernetPortCount"
+    - Name: ModifiedValueHandler1
+      Id: g=203010ea9c5921a4b0eed364ecfdbe14
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Id: g=48f4310072b244d55ec39da74ed0adbb
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":690,"Namespace":11}
+      - Name: MethodsToCall
+        Id: g=85bf823e248454695e0f94c8dd5f4c36
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Id: g=d51da34e0cf4ce2e4dcc9cd2d7d56252
+          Type: BaseObjectType
+          Children:
+          - Name: ns=6;ObjectPointer
+            Id: g=9fae3d8078b4d7753202cb68be2a91b7
+            Type: NodePointer
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+            Children:
+            - Name: Kind
+              Id: g=a60b2d391b84ee370bee771aaf03a4d6
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"Id":58}
+            - Name: DynamicLink
+              Id: g=5bf1845253145b785f1ad1285563ed0d
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../DateAndTimeWidgetLogic@NodeId"
+              Children:
+              - Name: Mode
+                Id: g=f745287d9aaf5236a476f04f6431dd2f
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                Value: 2
+          - Name: ns=6;Method
+            Id: g=5cad457cd98e1f7a3b18443ed473814a
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "LocalNTPServerOptionsChanged"
+      - Name: EventArguments
+        Id: g=9f119fb25e3d4e0f3aa04689444b33b1
+        Type: UserValueChanged
+        Children:
+        - Name: NewValue
+          Id: g=6e6ae75782ae69d3ddd83af6bf84f457
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+        - Name: EventId
+          Id: g=447f4e84b31cbd1ffbdf9922ea27fc30
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Id: g=b618d23115c10b4d673a8751feca4802
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Id: g=f2fe8629b78910c71fc778013410f604
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Id: g=17953de9e88ddde53cb652f2b5f0ae34
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Id: g=ad445dc288f184a2e434ace6f5038cb0
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Id: g=5366cc5a8a6165d6286394410d26012b
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Id: g=f6ceae17a18086e1374a46fed7018b8c
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Id: g=cf52338fc2acd518e6594c1b35462d06
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
+    - Name: ModifiedValueHandler2
+      Id: g=4def8b8b545d297706609e2786ce7c52
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Id: g=ef59918e7bf38f176694f14af7bb8946
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":690,"Namespace":5}
+      - Name: MethodsToCall
+        Id: g=e8fb88197c65ae439558f38ab747f430
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Id: g=99dad4515ef40cb408b7309acd216421
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Id: g=5bcc780250cc6e421e3ba1c2b2d9ac3f
+            Type: NodePointer
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+            Children:
+            - Name: Kind
+              Id: g=c8968eea919d8544bcba3eeb004ac329
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"Id":58}
+            - Name: DynamicLink
+              Id: g=d93904c61e165d6282c94caf7b1c0398
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../DateAndTimeWidgetLogic@NodeId"
+              Children:
+              - Name: Mode
+                Id: g=b5525446ee5e033b36820f33c51dbf44
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                Value: 2
+          - Name: ns=3;Method
+            Id: g=0acea263c21baf9661759175997b0368
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "LocalNTPServerOptionsChanged"
+      - Name: EventArguments
+        Id: g=54b0b3c964185267ec779b48a0ab46bd
+        Type: UserValueChanged
+        Children:
+        - Name: NewValue
+          Id: g=1b61555a21bfbc4545d2614ab2818f40
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+        - Name: EventId
+          Id: g=8d7d9b9f036d68104644c3c76a7a7f9e
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Id: g=baad3735f44270b840c3f52e9e9fcde4
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Id: g=b11dbb050b3a1ec425eeec211174f220
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Id: g=0494bb93fa1fee34b4692cc3f6b0be82
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Id: g=8535c705d622dfd99da28fb37575543f
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Id: g=d32573757cd85259873d5170b947ce94
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Id: g=6f83abb853a11a422c580fb372fc2bfb
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Id: g=0bc5fb145431b94b18fd5dc9662659a5
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
+  - Name: Separator
+    Id: g=a4ac130c4ea271f8138acaa0abdfe56b
+    Type: PolyLine
+    Children:
+    - Name: Path
+      Id: g=4d03bf65fb2c0e3a8cdc05febd59ae4a
+      Type: BaseDataVariableType
+      DataType: String
+      ModellingRule: Optional
+      Value: "M 0.000000 0.000000 L 332.000000 0.000000"
+    - Name: LeftMargin
+      Id: g=69c182ab77357715adc705706dfdcb41
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 18.0
+    - Name: TopMargin
+      Id: g=f687363217a1f142b4b977ba6100a442
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 210.0
+    - Name: RightMargin
+      Id: g=a0a14a851eec303cf659e994d08c0480
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: BottomMargin
+      Id: g=16414e41e0e9c86920f8b674b356f1af
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: Width
+      Id: g=3e36cad0b1cd487e214bc578cfcce009
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 364.0
+    - Name: LineColor
+      Id: g=26c2def7f8b895e19eb15a4a71eb44f0
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#b3b3b3"
+  - Name: RebootLayout
+    Id: g=3134a2dd04344d261fe84828dcae6c14
+    Type: RowLayout
+    Children:
+    - Name: Height
+      Id: g=cd2265d7ebad92f883396fc9838ca05a
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 46.0
+    - Name: TopMargin
+      Id: g=089a41e4488bd4ded351fbae698806cd
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 212.0
+    - Name: WarningImage
+      Id: g=2cba714c394abad65af95651e3b17a70
+      Type: Image
+      Children:
+      - Name: Path
+        Id: g=394332425492b7b30cd674c3f39c09c4
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=18;%PROJECTDIR%/WarningIcon.svg"
+      - Name: Width
+        Id: g=4448687a38845387e35697058ceca828
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 16.0
+      - Name: Height
+        Id: g=98c5ae4a7b29fea6c9773659dd27dcaa
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 16.0
+      - Name: LeftMargin
+        Id: g=35b50dd33598b0af92f9ada720545bd5
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 18.0
+      - Name: Visible
+        Id: g=9764420d96931458a2da290807ee2844
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: DynamicLink
+          Id: g=d9184acbc6ce3e98df12197e829224a9
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Visible"
+      - Name: VerticalAlignment
+        Id: g=cbeb4d503df156d4b0117a964b028f6f
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 2
+    - Name: RebootToCommitChanges
+      Id: g=47bfa556c8345b4833e413759ea6f7c2
+      Type: Label
+      Children:
+      - Name: Text
+        Id: g=656fc3370230c388b1a867de9dc54b57
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"NamespaceIndex":18,"TextId":"RebootToCommitChanges"}
+      - Name: LeftMargin
+        Id: g=bdcabefa7552916a92849a3a1529320d
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 6.0
+      - Name: Visible
+        Id: g=e334b37def09931f6ae28fb269db32e9
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: DynamicLink
+          Id: g=0ef4e03cbb2ec7dd30a39f1f4a86d669
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Visible"
+      - Name: VerticalAlignment
+        Id: g=715923db7fa0fa467a4544c1b3e5d682
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 2
+      - Name: Width
+        Id: g=df44464c08a29ffeb97f50f67dff4d77
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 255.0
+      - Name: WordWrap
+        Id: g=4a6832ad924616ffeb3706d8788aa748
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
+        Value: true
+    - Name: Visible
+      Id: g=69e3e87b8e9af53906df207789f85900
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: DynamicLink
+        Id: g=44bd2864b036a5e5ef1ea6b3861eba44
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../SystemNode/RebootRequired"
+    - Name: Width
+      Id: g=e1540405dc289fa4a6727f02decf93ac
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 400.0
+  - Name: RebootButton
+    Id: g=ed5e59c168beb7266a7a160bda9aeb28
+    Type: Button
+    Children:
+    - Name: Text
+      Id: g=f6d9da1e19b5404540094260b7c4edc0
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":18,"TextId":"Reboot"}
+    - Name: LeftMargin
+      Id: g=f32535f87370b886b0559341d782f6af
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 302.0
+    - Name: TopMargin
+      Id: g=57f1f36412e4b01b25f60ba3a38df9f8
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 218.0
+    - Name: Width
+      Id: g=b491642530bb4bc4b9e1aaa0d22ccaae
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 80.0
+    - Name: Height
+      Id: g=3d104f072a59c4f23285a8024e25641d
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 34.0
+    - Name: MouseClickEventHandler1
+      Id: g=c442cbf688e0b908e6315fb1976cfe8f
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Id: g=678bd6733571843e9c843cb2f73607f0
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":16,"Namespace":5}
+      - Name: MethodsToCall
+        Id: g=1b9d65c544abe77599743493f0665520
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Id: g=760b97495ca149288bc2b10da7c2b37e
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Id: g=229a3a89814b9bf0d558fd6d4d91a150
+            Type: NodePointer
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+            Children:
+            - Name: Kind
+              Id: g=8e95dda03043da9720e9e857072ccebc
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"Id":58}
+            - Name: DynamicLink
+              Id: g=86e0b7018579d8c6652f5ce6b22e82ea
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../DateAndTimeWidgetLogic@NodeId"
+              Children:
+              - Name: Mode
+                Id: g=75ff210107146713c8237b7c0637e26c
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: ns=3;Method
+            Id: g=cbec6905b1ddc17f739a3b47f702a21d
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Reboot_Device"
+      - Name: EventArguments
+        Id: g=20c456405724fa4d0cd254665e800d21
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Id: g=84e77fb44b324fb6425afd57bebfe179
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Id: g=938449cc22735ab426f60d253f79c810
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Id: g=99e60f090781f1f9f15f89bd71b36dbb
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Id: g=b4fa176eb62e67b1e263ea5e80747e4b
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Id: g=20daab0f14dd1b96962f1eb424c1bd5c
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Id: g=b4bd11897c14834d15a1017b5531bd3e
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Id: g=3614db4cbe7a5aeb612cb9205e56b323
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Id: g=301f86df8271ea2113065e2fa927aff2
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
+    - Name: Enabled
+      Id: g=24c9e5483360d81b7e148eaacedd04ec
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: DynamicLink
+        Id: g=be4d28e7e67fb18a3cc7469ae1ccdfcf
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../SystemNode/RebootRequired"
+  - Name: DateAndTimeWidgetLogic
+    Id: g=709c512c79ab0964b9a69e5e2e73ad20
+    Type: NetLogic
+    Children:
+    - Class: Method
+      Name: LocalNTPServerOptionsChanged
+      Id: g=8680d2439ffa4cbb6a3df2f840c2e6ea
+    - Class: Method
+      Name: Reboot_Device
+      Id: g=e641b4049562d6e4e81952ae4a433123
+    - Class: Method
+      Name: SynchronizationModeChanged
+      Id: g=46c4c8b91c76a649c6c310c694e9f88c
+  - Name: Width
+    Id: g=fa0aefa5200c19727f6d0d4912596b12
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 400.0
+  - Name: Height
+    Id: g=55489fb7367ce93ced89e29a87c83b85
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 258.0
+  - Name: SystemNode
+    Id: g=c0389042e67a7ee9b0581d56287b68ff
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"ec6e454a68ebbe1d2909d93aa145ec1b","Namespace":18}
+    Children:
+    - Name: Kind
+      Id: g=a26ac279c0e6131651f7dc3c42e4f35c
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":1,"Namespace":16}
+  - Name: HorizontalAlignment
+    Id: g=e96d54be6a32148b7c214082ecd4ccb1
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+    Value: 0
+  - Name: VerticalAlignment
+    Id: g=24881c1472327cf757295c59de663beb
+    Type: BaseVariableType
+    DataType: VerticalAlignment
+    ModellingRule: Optional
+    Value: 0
+- File: FactoryTalkRemoteAccessWidget/FactoryTalkRemoteAccessWidget.yaml

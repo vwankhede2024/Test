@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\VWankhede\\OneDrive - Rockwell Automation, Inc\\Documents\\Rockwell Automation\\FactoryTalk Optix\\Projects\\Demo_RA\\ProjectFiles\\NetSolution\\Demo_RA.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\VWankhede\\OneDrive - Rockwell Automation, Inc\\Documents\\Rockwell Automation\\FactoryTalk Optix\\Projects\\Demo_RA\\ProjectFiles\\NetSolution\\Demo_RA.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\VWankhede\\OneDrive - Rockwell Automation, Inc\\Documents\\Rockwell Automation\\FactoryTalk Optix\\Projects\\Demo_RA\\ProjectFiles\\NetSolution\\Demo_RA.csproj",
+        "projectName": "Demo_RA",
+        "projectPath": "C:\\Users\\VWankhede\\OneDrive - Rockwell Automation, Inc\\Documents\\Rockwell Automation\\FactoryTalk Optix\\Projects\\Demo_RA\\ProjectFiles\\NetSolution\\Demo_RA.csproj",
+        "packagesPath": "C:\\Users\\VWankhede\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\VWankhede\\OneDrive - Rockwell Automation, Inc\\Documents\\Rockwell Automation\\FactoryTalk Optix\\Projects\\Demo_RA\\ProjectFiles\\NetSolution\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\VWankhede\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\Rockwell Automation\\FactoryTalk Optix\\Studio\\Tools\\DotNetSdk\\sdk\\6.0.408\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

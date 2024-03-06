@@ -1,0 +1,79 @@
+Name: Demo_RA
+Id: g=22e2f0b343b6ecd33e0d8caaaada7695
+Type: ProjectFolder
+Children:
+- Name: Localization
+  Id: g=82730e40908dbf2cfe057163b0f2e63c
+  Type: PropertyGroup
+  Children:
+  - Name: Locales
+    Id: g=d29f622910e1c78eea0342f6c7c51d6e
+    Type: PropertyType
+    DataType: String
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["en-US"]
+  - Name: LocaleFallbackList
+    Id: g=d119c3914a982d9e7f6901d73b0abbb9
+    Type: PropertyType
+    DataType: String
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["en-US"]
+- Name: Authentication
+  Id: g=eac9947998848c5696d4053145217682
+  Type: PropertyGroup
+- Name: PasswordPolicy
+  Id: g=5b741cb70041424a9ded4597328ac656
+  Type: PasswordPolicy
+  Children:
+  - Name: MaximumPasswordAge
+    Id: g=511f218c2daaa4132dd8f413386305df
+    Type: PropertyType
+    DataType: UInt16
+    Value: 0
+  - Name: EnforcePasswordHistory
+    Id: g=2b907456a42144c202ec23b8f537a500
+    Type: PropertyType
+    DataType: Byte
+    Value: 1
+  - Name: MinimumPasswordAge
+    Id: g=1b5ea8f564cc75ad727e3187e1893d23
+    Type: PropertyType
+    DataType: UInt16
+    Value: 0
+  - Name: MinimumPasswordLength
+    Id: g=0b2bd4b2eae97a110b3dda2752c5b7c7
+    Type: PropertyType
+    DataType: Byte
+    Value: 8
+- Name: AlarmConfiguration
+  Id: g=a6c1148fe305e4d18773fb62885b105b
+  Type: PropertyGroup
+- File: UI/UI.yaml
+- File: Model/Model.yaml
+- File: Converters/Converters.yaml
+- File: Alarms/Alarms.yaml
+- File: Recipe/Recipe.yaml
+- File: Loggers/Loggers.yaml
+- File: DataStores/DataStores.yaml
+- File: Reports/Reports.yaml
+- File: 'OPC-UA/OPC-UA.yaml'
+- File: CommDrivers/CommDrivers.yaml
+- File: NetLogic/NetLogic.yaml
+- File: Security/Security.yaml
+- File: System/System.yaml
+- File: Translations/Translations.yaml
+- File: Retentivity/Retentivity.yaml
+- Name: RecipeSchema1
+  Id: g=6c2f9cf261f7ea953c48acefd7f076c6
+  Type: Alias
+  DataType: NodeId
+  Value: {"IdType":2,"Id":"21f025fddb083136521b392b55625a77","Namespace":18}
+  Children:
+  - Name: Kind
+    Id: g=5de73e7a75d182dfe87f23bec4826a7f
+    Type: PropertyType
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"a598e7111e40ca6651d85f0069e3b77e","Namespace":18}
+- File: OPC_UA/OPC_UA.yaml

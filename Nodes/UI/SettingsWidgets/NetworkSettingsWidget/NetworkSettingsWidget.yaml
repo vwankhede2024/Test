@@ -1,0 +1,688 @@
+Name: NetworkSettingsWidget
+Id: g=8f65c74bf2b92c8d96582d420c7e2509
+Type: FolderType
+Children:
+- Name: NetworkSettingsWidget
+  Id: g=93cbf19dd68a72c543a41f03c3c2b7a1
+  Supertype: Screen
+  ReferenceType: HasComponent
+  Children:
+  - Name: HorizontalAlignment
+    Id: g=52bbd20f1d67e4c0e1770a19563ff400
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+    Value: 0
+  - Name: VerticalAlignment
+    Id: g=b3923c7b5f6b725ff5a4595a54e37db1
+    Type: BaseVariableType
+    DataType: VerticalAlignment
+    ModellingRule: Optional
+    Value: 0
+  - Name: Width
+    Id: g=695200d797abcc8e0fbf9146d30b35cd
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 400.0
+  - Name: Height
+    Id: g=ba833b7d7514e0823300c566a73094c6
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 250.0
+  - Name: NavigationPanel1
+    Id: g=5493500a4095ab7e106136956f01f473
+    Type: NavigationPanel
+    Children:
+    - Name: Panels
+      Id: g=912c160aee39063141a962dbbab0e652
+      Type: BaseObjectType
+      Children:
+      - Name: LANPanel
+        Id: g=ca681b9752c824cc492a962a34c6f75e
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Id: g=21aa4cacfe7eb2a60731c82f930a685d
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":18,"TextId":"LAN"}
+        - Name: Panel
+          Id: g=c17ce18efc7ac322adef99f7bc064fdf
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"IdType":2,"Id":"41f433c486aa6dfdb14c2c47570eea1a","Namespace":18}
+          Children:
+          - Name: Kind
+            Id: g=4572bf16b2c46af43a7ec05430b20deb
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"Id":71,"Namespace":5}
+      - Name: WANPanel
+        Id: g=6ab2b40cf5ac66c517fa14462014fa2b
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Id: g=a77498bc7299ab17a7168fdbac66d4ee
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":18,"TextId":"WAN"}
+        - Name: Panel
+          Id: g=b766130d35f4347f9ea5fdc237d64727
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"IdType":2,"Id":"d17d8ab3d7f8047c35a02cbe0b7248c6","Namespace":18}
+          Children:
+          - Name: Kind
+            Id: g=48a14adc0af0bd2ecdd5f134ad76ff9e
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"Id":71,"Namespace":5}
+    - Name: CurrentPanel
+      Id: g=20b49568f6f897a5ec462ce56360a840
+      Type: NodePointer
+      DataType: NodeId
+      AccessLevel: Read
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: Kind
+        Id: g=9e044107b2a58439d4cd9d0087ccdfa1
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":6,"Namespace":5}
+    - Name: Width
+      Id: g=731265ed6d06ff3e97c700198e21488c
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 304.0
+    - Name: Height
+      Id: g=a938a0375947b9d13832ca665231337a
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 200.0
+    - Name: HorizontalAlignment
+      Id: g=ce9bdd3ddce0c706086087a637f59ed3
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Id: g=b16ff24e0f12058aadc394d23a600fc4
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: TabPosition
+      Id: g=fe25c81d4128d0f23a1540c3254cb4af
+      Type: BaseVariableType
+      DataType: NavigationPanelTabPositionEnum
+      ModellingRule: Optional
+      Value: 0
+    - Name: CurrentTabIndex
+      Id: g=1a62969146667b0ffbf4cc084ec51389
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Class: Reference
+      Target: ns=5;i=1181
+    - Class: Reference
+      Target: ns=5;i=1183
+  - Name: BottomBar
+    Id: g=c52d06d1a11a8f6d48b1525a7cf299ce
+    Type: Panel
+    Children:
+    - Name: Width
+      Id: g=6a0c7050a602f9c24b85965a37956655
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 400.0
+    - Name: Height
+      Id: g=4e14a92418f875ace9b74bf69326e1ef
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 56.0
+    - Name: TopMargin
+      Id: g=360aa3c67910b7740dd67517eca97672
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 195.0
+    - Name: LeftMargin
+      Id: g=edb4be3a72f3bf4ec469c8e436afa5f6
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: Separator
+      Id: g=bcc2afd22efae69cfa43b0a87908858d
+      Type: PolyLine
+      Children:
+      - Name: LineColor
+        Id: g=5046c0232299e64e18b5174531271b9d
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#d2ddee"
+      - Name: FillColor
+        Id: g=24ec4a1f2f5783d2a4d780839c354b97
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#ffffff"
+      - Name: LineThickness
+        Id: g=4f485356924703181954f4cc51695e13
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 1.0
+      - Name: Blink
+        Id: g=b441e34b459c6494fe9d7cd8eb7ae9cc
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
+        Value: false
+      - Name: Path
+        Id: g=f7a1f545335c464dd2adf1a1525bcb83
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "M 0.000000 0.000000 L 332.000000 0.000000"
+      - Name: HitTestVisible
+        Id: g=911ef08b3491961beaea8c0e793a70ca
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
+        Value: false
+      - Name: MoveTarget
+        Id: g=4ca834d1769d0cc58c906ff9a0356378
+        Type: NodePointer
+        DataType: NodeId
+        ModellingRule: Optional
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+        Children:
+        - Name: Kind
+          Id: g=f63d43f86472f87045323ce17f240849
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"Id":71,"Namespace":5}
+        - Name: NodeClass
+          Id: g=d22cc1a4aa9e95e5536bc2cae786404f
+          Type: PropertyType
+          DataType: NodePointerNodeClass
+          ModellingRule: Optional
+          Value: 2
+      - Name: Visible
+        Id: g=66c1060b9d072ecc566bbd19a0c09080
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
+        Value: true
+      - Name: Enabled
+        Id: g=958accd25a42cce8ee84335ec943fad1
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
+        Value: true
+      - Name: Opacity
+        Id: g=d4259e75a74d84018c7ee51e794b2ba9
+        Type: BaseVariableType
+        DataType: Float
+        ModellingRule: Optional
+        Value: 100.0
+      - Name: LeftMargin
+        Id: g=a4bbd92842aac7bebc21a4b25a228e1f
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 24.0
+      - Name: TopMargin
+        Id: g=ec2e60abb6d9b944c810882affb34cfe
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 5.0
+      - Name: RightMargin
+        Id: g=07883db37cbde1517c80c74e4497dfd5
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 0.0
+      - Name: BottomMargin
+        Id: g=94de195814536216e27437016aa9fca2
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 0.0
+      - Name: Width
+        Id: g=d4fe4c48b3891d44b53c898d9f8d2d67
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 360.0
+      - Name: Height
+        Id: g=6f969e780bafb1172d151bad1a347c67
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 1.0
+      - Name: HorizontalAlignment
+        Id: g=a7cb8581b35828d293265c5496c2a1b6
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 0
+      - Name: VerticalAlignment
+        Id: g=24d381720b3577e4240cfcddd52ae71e
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 0
+      - Name: Rotation
+        Id: g=e85528d515432e002f55f5a8728dee84
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 0.0
+    - Name: RebootButton
+      Id: g=b47c1909d2ad37fb20b8a0a00ba98ed2
+      Type: Button
+      Children:
+      - Name: Text
+        Id: g=310081104eb3eab2e0a722c7e246ce1f
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"NamespaceIndex":18,"TextId":"Reboot"}
+      - Name: TopMargin
+        Id: g=867905d5c8c38686f1d2e10619aa8790
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 13.0
+      - Name: Height
+        Id: g=ed08796bcede0c4036d748d0c4515ca7
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 34.0
+      - Name: Width
+        Id: g=f1fa2f3788b41305f5d73624b395f58d
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 80.0
+      - Name: MouseClickEventHandler1
+        Id: g=a014db2f29e17d9f69dc25c87e223147
+        Type: EventHandler
+        Children:
+        - Name: ListenEventType
+          Id: g=38021d9ec26425af4102e22e36859257
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"Id":16,"Namespace":5}
+        - Name: MethodsToCall
+          Id: g=0137491647cce0c64d5f09da65a04823
+          Type: BaseObjectType
+          Children:
+          - Name: MethodContainer1
+            Id: g=46fcf1b68a6fe9ff869735c2bb0c1ee3
+            Type: BaseObjectType
+            Children:
+            - Name: ns=3;ObjectPointer
+              Id: g=635776ce3ee9b233b7becbe288598f48
+              Type: NodePointer
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+              Children:
+              - Name: Kind
+                Id: g=b4fb1be5a38991be4e822f8f9aebf8b7
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"Id":58}
+              - Name: DynamicLink
+                Id: g=dd580b3c74085b3243237807331e1821
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../NetworkSettingsLogic@NodeId"
+                Children:
+                - Name: Mode
+                  Id: g=900bb9ad575d30628598cdc4a351dd94
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: ns=3;Method
+              Id: g=8fe341d49d190b9f6537b7c9af9b75a7
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "Reboot"
+        - Name: EventArguments
+          Id: g=7a34ec25d0bcf119f0cde03a51fe6e2b
+          Type: MouseClickEvent
+          Children:
+          - Name: EventId
+            Id: g=23b25ec72257758a99b2d7357513e7aa
+            Type: PropertyType
+            DataType: ByteString
+            Value: ""
+          - Name: EventType
+            Id: g=0376bf973903bc9f49a66670eed08d17
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+          - Name: SourceNode
+            Id: g=fe188b4dd7d8ba5e40f3575e30cfc350
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+          - Name: SourceName
+            Id: g=af47e6c5fae0d98c7823b3bcb55aa7ff
+            Type: PropertyType
+            DataType: String
+            Value: ""
+          - Name: Time
+            Id: g=29f1a17f4a02af40ab8e0e1ba1837fe3
+            Type: PropertyType
+            DataType: UtcTime
+            Value: "1601-01-01T00:00:00.0000000"
+          - Name: ReceiveTime
+            Id: g=a1c38d288f4ecb511fdb524c3585b17e
+            Type: PropertyType
+            DataType: UtcTime
+            Value: "1601-01-01T00:00:00.0000000"
+          - Name: Message
+            Id: g=037debfd3bf3eddcb441082e9316f695
+            Type: PropertyType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Severity
+            Id: g=2c9186cd1bc3336dc104439a90edac10
+            Type: PropertyType
+            DataType: UInt16
+            Value: 0
+      - Name: Enabled
+        Id: g=4d5f010f9f47600142522c4e4d710349
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+      - Name: HorizontalAlignment
+        Id: g=3ee9f8ac52150593a322d3f154edaaef
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: RightMargin
+        Id: g=fa393c7f2e2bfd674778c2c86714a58c
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 8.0
+    - Name: ApplyButton
+      Id: g=ad73a9d7a5b0ebc5990b067e156074f2
+      Type: Button
+      Children:
+      - Name: Text
+        Id: g=5583c7d0b32309636d703d983f98290d
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"NamespaceIndex":18,"TextId":"Apply"}
+      - Name: TopMargin
+        Id: g=23e532f2142bb4b624c9781e38b44eba
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 13.0
+      - Name: Height
+        Id: g=3b7d7bdbef0583add4f6d47a0b861e7a
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 34.0
+      - Name: Width
+        Id: g=c15867554eff3c39a27f56dfeaa4ffa5
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 72.0
+      - Name: MouseClickEventHandler1
+        Id: g=f7f780422c53498e0a3be6a1cd58f950
+        Type: EventHandler
+        Children:
+        - Name: ListenEventType
+          Id: g=08b1036ad933abcdbdb5b8b3f182ec12
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"Id":16,"Namespace":5}
+        - Name: MethodsToCall
+          Id: g=67813a933f2e3ebaf5122234f7833177
+          Type: BaseObjectType
+          Children:
+          - Name: MethodContainer1
+            Id: g=5a8f855ef2d35498a1966f01a0d4fdc6
+            Type: BaseObjectType
+            Children:
+            - Name: ns=3;ObjectPointer
+              Id: g=ecee325f43b375c2a1eda4b9e3eb0763
+              Type: NodePointer
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+              Children:
+              - Name: Kind
+                Id: g=c77da6472b6b8b10ff600910bd685028
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"Id":58}
+              - Name: DynamicLink
+                Id: g=d30b15cf61bb7e68cd03862c9fbfe6e4
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../NetworkSettingsLogic@NodeId"
+                Children:
+                - Name: Mode
+                  Id: g=cc57dd949d84c394907f2f0f1398fc59
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: ns=3;Method
+              Id: g=fa26223db946e3d0156b7b11863027d0
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "ApplyNetworkConfiguration"
+        - Name: EventArguments
+          Id: g=d1b59c24ff37cb36da5d01871f0fdd78
+          Type: MouseClickEvent
+          Children:
+          - Name: EventId
+            Id: g=42e215f317609fa4445881496856e552
+            Type: PropertyType
+            DataType: ByteString
+            Value: ""
+          - Name: EventType
+            Id: g=471127276cd6261014d045c345aa03b5
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+          - Name: SourceNode
+            Id: g=c47e86dab850b14026c1a8f02c7825be
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+          - Name: SourceName
+            Id: g=e0a7ec377eead35af5fb2cafeb022280
+            Type: PropertyType
+            DataType: String
+            Value: ""
+          - Name: Time
+            Id: g=aee1d8abf591ddaa1e61a88a82537ff0
+            Type: PropertyType
+            DataType: UtcTime
+            Value: "1601-01-01T00:00:00.0000000"
+          - Name: ReceiveTime
+            Id: g=3289baa7b6336b0f4f4de202a0eebb65
+            Type: PropertyType
+            DataType: UtcTime
+            Value: "1601-01-01T00:00:00.0000000"
+          - Name: Message
+            Id: g=3b9345980e160893804a2fe26e0e096a
+            Type: PropertyType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Severity
+            Id: g=5272a30df2445247258607f0a89f14d5
+            Type: PropertyType
+            DataType: UInt16
+            Value: 0
+      - Name: HorizontalAlignment
+        Id: g=0c6354b4a99028dc906c08fae7dd2076
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: RightMargin
+        Id: g=6ecaece9d167d8ab0da774e7d54146f3
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 96.0
+    - Name: WarningImage
+      Id: g=8d0d550c94771bd932136a5954b77015
+      Type: Image
+      Children:
+      - Name: Path
+        Id: g=07bd4718140d139e88ac697960e173f3
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=18;%PROJECTDIR%/WarningIcon.svg"
+      - Name: Width
+        Id: g=85d065d45c44fe4bad0a9b4916a9d16a
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 16.0
+      - Name: Height
+        Id: g=827212d3ed82876bede6dfd4487f5a16
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 16.0
+      - Name: LeftMargin
+        Id: g=fe219caffbba86a6069d2d294a8d1c02
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: TopMargin
+        Id: g=634fcd23271e2caefe6d880aa95beb8a
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 19.0
+      - Name: Visible
+        Id: g=0af9d05600fc1cb5e71cba550e3b8171
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+    - Name: MessageLabel
+      Id: g=e6bf71382679c90150f3335992157407
+      Type: Label
+      Children:
+      - Name: Text
+        Id: g=f4fb6913cfd83fd6d54faacb004311a5
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"NamespaceIndex":18,"TextId":"RebootToCommitChanges"}
+      - Name: LeftMargin
+        Id: g=ee788a447e2da3f144a83a07b56551df
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 32.0
+      - Name: Visible
+        Id: g=9035b79375f3d1949df3d27d1f6fe97d
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+      - Name: VerticalAlignment
+        Id: g=e9c2b48d783929b764642ed7834948b4
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 2
+      - Name: TopMargin
+        Id: g=f1c263a4319d3c72207ae01410b6d878
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: -2.0
+      - Name: BottomMargin
+        Id: g=0ffbdc6e035fa42e1db41adab6f6bbc3
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 0.0
+      - Name: Elide
+        Id: g=dd478407cf69238b3bfc48f7c00e1e62
+        Type: BaseDataVariableType
+        DataType: ElideEnum
+        ModellingRule: Optional
+        Value: 0
+      - Name: WordWrap
+        Id: g=c7b24185ce5573811e3a2d2ab8aa6c34
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
+        Value: true
+      - Name: Width
+        Id: g=6295e682d48d38462d2b28f7408aa0bb
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 190.0
+  - Name: NetworkConfiguratorEditModels
+    Id: g=08393776fd865128709d5861c7c85609
+    Type: BaseObjectType
+  - Name: SystemNode
+    Id: g=e367314d92cb99367f070ba404ac1b51
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"ec6e454a68ebbe1d2909d93aa145ec1b","Namespace":18}
+    Children:
+    - Name: Kind
+      Id: g=c8b524cbd5a4281218cdc2f65b986f51
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":1,"Namespace":16}
+  - Name: NetworkSettingsLogic
+    Id: g=62389c12c4253b8fa6c44474f16e0ffb
+    Type: NetLogic
+    Children:
+    - Class: Method
+      Name: ApplyNetworkConfiguration
+      Id: g=fff9c8aca72579a59af1199836af1910
+    - Class: Method
+      Name: Reboot
+      Id: g=f5ada8cba65452ef4f219ffc08f5bb48
+  - Name: NetworkInterfaceLogic
+    Id: g=a97f42b2a256943bd1d404c03eaca0fe
+    Type: NetLogic
+  - Name: NetworkConfiguratorEditModelsLogic
+    Id: g=eb4b94b82851635decce56a0f876e54e
+    Type: NetLogic
+  - Name: NetworkInterfacesEditModelToSystemWriterLogic
+    Id: g=ee488c580b7d0816ba93ef53d3bc0703
+    Type: NetLogic
+  - Name: NetworkInterfacesEditModelReaderLogic
+    Id: g=5763dc7dd353c1e41d6654e9c875d63b
+    Type: NetLogic
+  - Name: SystemToNetworkInterfacesEditModelWriterLogic
+    Id: g=857b7cd8eda4ac2c05e2abc2b89b63b1
+    Type: NetLogic
+- File: NetworkSettingsWidgetComponents/NetworkSettingsWidgetComponents.yaml

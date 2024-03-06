@@ -1,0 +1,23 @@
+Name: Type
+Id: g=d9e1628e96e5dfaa7b1af22a5a5ffd81
+Type: FolderType
+Children:
+- Name: Object
+  Id: g=2c87c7d60e7eba872c25c5c57be6d0eb
+  Supertype: BaseObjectType
+  Children:
+  - Name: SetSpeed
+    Id: g=92d81c889c617be5c1d1023eb7672f97
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: CurSpeed
+    Id: g=94bcede768894ab3e2ea7e69b6c4ec55
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Running
+    Id: g=832b6f02ee8bb24e2a1ee8b8e9a56ff8
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0

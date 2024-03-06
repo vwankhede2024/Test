@@ -1,0 +1,94 @@
+Name: Recipe
+Id: g=a238b95d924f2e0c5ee878db25e3a48c
+Type: RecipesCategoryFolder
+Children:
+- Name: RecipeSchema1
+  Id: g=627e1a4e56aff26c7626fc5f882c4789
+  Type: RecipeSchema
+  Children:
+  - Name: Root
+    Id: g=21ef854c0d5b434cbc06f95c868b221b
+    Type: BaseObjectType
+    Children:
+    - Name: Temp
+      Id: g=43aba95b5c4ce76659384bbbc699c729
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: RPM
+      Id: g=b674173c5c8d41377996df846af56bf9
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+  - Class: Reference
+    Target: ns=29;i=27
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=33
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=31
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=35
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=37
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=76
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=62
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=58
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=60
+    Direction: Forward
+  - Name: Store
+    Id: g=37c6d2737d7bfbbca78afda51e7fd3e0
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"de36c90208cf63964e68f55a62ec92ca","Namespace":18}
+    Children:
+    - Name: Kind
+      Id: g=17abbdf14a5d3b5a07c79063032978e3
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":1,"Namespace":25}
+  - Name: TargetNode
+    Id: g=1b4a59715a8369deb3dedf7ba5c4c6ce
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"bb443281d9b32b2e44900eefec70ca40","Namespace":18}
+    Children:
+    - Name: Kind
+      Id: g=0cdaf055262426dd8e1367cade770fcf
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: EditModel
+    Id: g=21f025fddb083136521b392b55625a77
+    Type: BaseObjectType
+    Children:
+    - Name: Temp
+      Id: g=b86b1753066e9c0c729fbeb2336f9977
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: RPM
+      Id: g=e0541b9073a6348a9ac09214e0f8af70
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0

@@ -1,0 +1,662 @@
+Name: System
+Id: g=1974fbab5089ac22c5a484d45e1620e1
+Type: SystemCategoryFolder
+Children:
+- Name: System
+  Id: g=ec6e454a68ebbe1d2909d93aa145ec1b
+  Type: System
+  Children:
+  - Name: NetworkInterfaces
+    Id: g=a92c674e3929fe3eabe8b1721da32125
+    Type: BaseObjectType
+  - Name: DateAndTime
+    Id: g=e6fee0ab264ac4b37938513257e22d5a
+    Type: PropertyGroup
+    Children:
+    - Name: SynchronizationMode
+      Id: g=68562d1b75f46552eb66c9d4ae990ad0
+      Type: BaseDataVariableType
+      DataType: TimeSynchronizationModeEnum
+      ReferenceType: HasProperty
+      Value: 0
+    - Name: RemoteNTPServer
+      Id: g=51272a9bf31b8e882169c04115e168a5
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasProperty
+      Value: ""
+    - Name: DateTime
+      Id: g=4da63a0ad031a6c5cadfbbae65698586
+      Type: BaseDataVariableType
+      DataType: DateTime
+      ReferenceType: HasProperty
+      Value: "1601-01-01T00:00:00.0000000"
+    - Name: TimeZone
+      Id: g=583eb5cab683d1a33229694f9173ef49
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasProperty
+      Value: ""
+    - Name: LocalNTPServerInterfaces
+      Id: g=a2adbb4657d2adf82cb27fb5bba28e9b
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: []
+  - Name: Device
+    Id: g=387db5c6f12d02cf78a28c6c8551927f
+    Type: PropertyGroup
+    Children:
+    - Name: CatalogNumber
+      Id: g=86aac987f95cf4e4714cf83f4d70d527
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasProperty
+      AccessLevel: Read
+      Value: ""
+    - Name: CPUFrequency
+      Id: g=ee891db25ccc0c1358a0251426507116
+      Type: BaseDataVariableType
+      DataType: UInt32
+      ReferenceType: HasProperty
+      AccessLevel: Read
+      Value: 0
+    - Name: CPUTemperature
+      Id: g=e39a008832b79f8b4a5f881e714dc145
+      Type: BaseDataVariableType
+      DataType: Int32
+      ReferenceType: HasProperty
+      AccessLevel: Read
+      Value: 0
+    - Name: CPUUtilization
+      Id: g=217b01b27d1e38a0ab9371867d86a0fe
+      Type: BaseDataVariableType
+      DataType: UInt32
+      ReferenceType: HasProperty
+      AccessLevel: Read
+      Value: 0
+    - Name: EthernetNetworkCount
+      Id: g=c51e18c6b63668cd23486ea2d855e3de
+      Type: BaseDataVariableType
+      DataType: UInt32
+      ReferenceType: HasProperty
+      AccessLevel: Read
+      Value: 0
+    - Name: EthernetPortCount
+      Id: g=f471f533fcb08b762f66a43e3ca87c56
+      Type: BaseDataVariableType
+      DataType: UInt32
+      ReferenceType: HasProperty
+      AccessLevel: Read
+      Value: 0
+    - Name: FirmwareDate
+      Id: g=a66cf0a419320506aaf94d2ab189cd11
+      Type: BaseDataVariableType
+      DataType: DateTime
+      ReferenceType: HasProperty
+      AccessLevel: Read
+      Value: "1601-01-01T00:00:00.0000000"
+    - Name: FirmwareVersion
+      Id: g=e6e120810ec22b98ef372b7568c9a5d2
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasProperty
+      AccessLevel: Read
+      Value: ""
+    - Name: HardwareProductCode
+      Id: g=fa7e17ec6d54935a6691f182545b4206
+      Type: BaseDataVariableType
+      DataType: UInt32
+      ReferenceType: HasProperty
+      AccessLevel: Read
+      Value: 0
+    - Name: HardwareProductType
+      Id: g=9ed5c9bd202d1d09f22e4835119e2e0d
+      Type: BaseDataVariableType
+      DataType: UInt32
+      ReferenceType: HasProperty
+      AccessLevel: Read
+      Value: 0
+    - Name: HardwareVersion
+      Id: g=f1b4b1e0b567cce8effe0387c4e2680c
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasProperty
+      AccessLevel: Read
+      Value: ""
+    - Name: HardwareSeries
+      Id: g=233f9eb58e2dd2cc65012438c474992d
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasProperty
+      AccessLevel: Read
+      Value: ""
+    - Name: Hostname
+      Id: g=8f5ec8e5671e5ce62f7e5a7f547224ea
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasProperty
+      Value: ""
+    - Name: LastApplicationUpdateTime
+      Id: g=68ae61075a745fd4aaf68a8de3bdb90a
+      Type: BaseDataVariableType
+      DataType: DateTime
+      ReferenceType: HasProperty
+      AccessLevel: Read
+      Value: "1601-01-01T00:00:00.0000000"
+    - Name: LastBootupTime
+      Id: g=3e20f03f0b88db18a6cbc48633152105
+      Type: BaseDataVariableType
+      DataType: DateTime
+      ReferenceType: HasProperty
+      AccessLevel: Read
+      Value: "1601-01-01T00:00:00.0000000"
+    - Name: OSVersion
+      Id: g=54e4783824390159c9a9ba13d257bf15
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasProperty
+      AccessLevel: Read
+      Value: ""
+    - Name: ProductName
+      Id: g=ca6d79f1c0284f7b17fbe3386d92faa7
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasProperty
+      AccessLevel: Read
+      Value: ""
+    - Name: ProtectionModeEnabled
+      Id: g=82610cd6b31b54e25dbf89ac17593148
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: false
+    - Name: SystemManagerVersion
+      Id: g=c7562ecaa7065420d5f716783f65026b
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasProperty
+      AccessLevel: Read
+      Value: ""
+    - Name: TotalOnTime
+      Id: g=4fcc72deb94b2600a015aa7ce7d0b9ab
+      Type: BaseDataVariableType
+      DataType: UInt32
+      ReferenceType: HasProperty
+      AccessLevel: Read
+      Value: 0
+    - Name: FreeMemory
+      Id: g=1e270df768ae0e88d6261680a8a36ebc
+      Type: BaseDataVariableType
+      DataType: UInt32
+      ReferenceType: HasProperty
+      AccessLevel: Read
+      Value: 0
+    - Name: TotalMemory
+      Id: g=e509d1f04f8cf764c4c2262da7d6f351
+      Type: BaseDataVariableType
+      DataType: UInt32
+      ReferenceType: HasProperty
+      AccessLevel: Read
+      Value: 0
+    - Name: UsedMemory
+      Id: g=8cd3925174e69ba473ce39409aa0ef1a
+      Type: BaseDataVariableType
+      DataType: UInt32
+      ReferenceType: HasProperty
+      AccessLevel: Read
+      Value: 0
+    - Name: FreeStorage
+      Id: g=e4353acd81dd8aa7d104bf192edd0f7a
+      Type: BaseDataVariableType
+      DataType: UInt32
+      ReferenceType: HasProperty
+      AccessLevel: Read
+      Value: 0
+    - Name: TotalStorage
+      Id: g=6b3533fcd8061e889e201413a0fcb677
+      Type: BaseDataVariableType
+      DataType: UInt32
+      ReferenceType: HasProperty
+      AccessLevel: Read
+      Value: 0
+    - Name: UsedStorage
+      Id: g=bb554bf7dbb001c93e020a9e056e70b4
+      Type: BaseDataVariableType
+      DataType: UInt32
+      ReferenceType: HasProperty
+      AccessLevel: Read
+      Value: 0
+  - Name: Display
+    Id: g=55e5acaf58efb06780062e75c0cb1de3
+    Type: PropertyGroup
+    Children:
+    - Name: Brightness
+      Id: g=494f1fc853a909686ee2c43dd0590f11
+      Type: BaseDataVariableType
+      DataType: UInt32
+      ReferenceType: HasProperty
+      Value: 10
+    - Name: HorizontalResolution
+      Id: g=b07b0e9f74fa6ec79dae9702757a5b46
+      Type: BaseDataVariableType
+      DataType: UInt32
+      ReferenceType: HasProperty
+      AccessLevel: Read
+      Value: 0
+    - Name: VerticalResolution
+      Id: g=1a57381c779b76de3005dd0001883bc6
+      Type: BaseDataVariableType
+      DataType: UInt32
+      ReferenceType: HasProperty
+      AccessLevel: Read
+      Value: 0
+    - Name: Scale
+      Id: g=b053afe0c5f30fc8f3d9c6268267e2db
+      Type: BaseDataVariableType
+      DataType: UInt32
+      ReferenceType: HasProperty
+      Value: 100
+    - Name: Orientation
+      Id: g=2677465f21fbda5b1f8b8a4f9f4d8d28
+      Type: BaseDataVariableType
+      DataType: DisplayOrientationEnum
+      ReferenceType: HasProperty
+      Value: 0
+  - Name: Application
+    Id: g=3a6acddc02dc62cfa3644d33b7fba09e
+    Type: PropertyGroup
+    Children:
+    - Name: FastBlink
+      Id: g=dec5f32976ef37fb21a3f55637dc7916
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      AccessLevel: Read
+      Value: false
+    - Name: MediumBlink
+      Id: g=8986046b36b508a9e9d27f814c9425d6
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      AccessLevel: Read
+      Value: false
+    - Name: SlowBlink
+      Id: g=6fec0340bac12bf066406e7dcfaa5f77
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      AccessLevel: Read
+      Value: false
+  - Class: Reference
+    Target: ns=16;i=17
+    Direction: Forward
+  - Name: RebootRequired
+    Id: g=d789059945c8c124fad4ede53d3535ce
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+    Value: false
+  - Class: Reference
+    Target: ns=16;i=100
+    Direction: Forward
+- Name: FTRemoteAccess
+  Id: g=f437673fcc988bca3673e6d9346ba174
+  Type: FTRemoteAccess
+  Children:
+  - Name: RuntimeVersion
+    Id: g=757dbe2bd2a2499bc468aac28a814ff3
+    Type: BaseDataVariableType
+    DataType: String
+    AccessLevel: Read
+    Value: ""
+  - Name: ServerConnection
+    Id: g=c3b90da45ec2d624371fef6236238afd
+    Type: BaseDataVariableType
+    DataType: ServerConnectionEnum
+    AccessLevel: Read
+    Value: 0
+  - Name: RegisteredToDomain
+    Id: g=2e0e4ccfd2957fe139165e3eea3494e1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+    Value: false
+  - Name: AssistanceRequestMode
+    Id: g=327bc3599a684d4d5b780e8eeb094416
+    Type: BaseDataVariableType
+    DataType: AssistanceRequestModeEnum
+    AccessLevel: Read
+    Value: 0
+  - Name: AssistanceRequested
+    Id: g=1f1851fd6db23f511cad7777d9ae254c
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+    Value: false
+  - Name: RemoteConnectionCount
+    Id: g=db663f50de174207757c1fb694275c91
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: AnonymousId
+    Id: g=1c3254490203d4b9072953ba29a8f068
+    Type: BaseDataVariableType
+    DataType: String
+    AccessLevel: Read
+    Value: ""
+  - Name: AnonymousPassword
+    Id: g=4c5b1079e435f73f72e8a4072460e97a
+    Type: BaseDataVariableType
+    DataType: String
+    AccessLevel: Read
+    Value: ""
+  - Class: Reference
+    Target: ns=16;i=71
+    Direction: Forward
+  - Class: Reference
+    Target: ns=16;i=73
+    Direction: Forward
+  - Class: Reference
+    Target: ns=16;i=75
+    Direction: Forward
+  - Class: Reference
+    Target: ns=16;i=78
+    Direction: Forward
+  - Class: Reference
+    Target: ns=16;i=99
+    Direction: Forward
+  - Class: Reference
+    Target: ns=16;i=90
+    Direction: Forward
+  - Name: RemoteConnectionRequestEventHandler
+    Id: g=4b1a2e66bd8379f2c454c1197e9a1355
+    Type: EventHandler
+    Children:
+    - Name: ListenEventType
+      Id: g=c167affd0a53948c5cb7bb12da089ca2
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":14,"Namespace":16}
+    - Name: MethodsToCall
+      Id: g=dd6d2e039c36340d5fe93ed397f41f26
+      Type: BaseObjectType
+      Children:
+      - Name: MethodContainerFTRemoteAccessWidgetUsername
+        Id: g=6e6679c8d680cac4b79c1808b892890b
+        Type: BaseObjectType
+        Children:
+        - Name: ObjectPointer
+          Id: g=33db804f093086f7e4607276499393b4
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"Id":22,"Namespace":3}
+          Children:
+          - Name: Kind
+            Id: g=0bc1c8ef4f337afc631ce7223ac25ef1
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: Method
+          Id: g=23ea163f3747965907d6d42a00180b01
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Set"
+        - Name: InputArguments
+          Id: g=e8b4a27001684350c9a6b9999475057e
+          Type: BaseObjectType
+          Children:
+          - Name: VariableToModify
+            Id: g=3be4f6de0704e9aafb4bf16eab471f40
+            Type: BaseDataVariableType
+            DataType: VariablePointer
+            Value: {"IdType":2,"Id":"4d410d91e4414682a8403bcbb906403e","Namespace":18}
+          - Name: Value
+            Id: g=14ccc7aabe8a5fe131501a71a6cacba8
+            Type: BaseDataVariableType
+            DataType: String
+            Value: ""
+            Children:
+            - Name: DynamicLink
+              Id: g=a229b37a48ca8b1a5bf110929db645cb
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{NodeId:ns=18;g=8c7cfbd5-afd7-2d39-0b2d-0fd8a706fda9}"
+              Children:
+              - Name: Mode
+                Id: g=4ab8ba071b555e22c32f851e00c15351
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                Value: 2
+          - Name: ArrayIndex
+            Id: g=8a227a95a9aa421cd4a8ebd046ec9439
+            Type: BaseDataVariableType
+            DataType: UInt32
+            ValueRank: ScalarOrOneDimension
+            Value: 0
+      - Name: MethodContainerFTRemoteAccessWidgetIPAddress
+        Id: g=93568851e5cc7d154397c75333d7aa0d
+        Type: BaseObjectType
+        Children:
+        - Name: ObjectPointer
+          Id: g=c990d15ead824918fb521ce56c87102c
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"Id":22,"Namespace":3}
+          Children:
+          - Name: Kind
+            Id: g=6458950bc1ac6216cfcea2a65cc98942
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: Method
+          Id: g=e2013bdd8f2d746526d1fbbd134a1295
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Set"
+        - Name: InputArguments
+          Id: g=8b96844c20bda5fcee41455eb0464326
+          Type: BaseObjectType
+          Children:
+          - Name: VariableToModify
+            Id: g=680350827f2ce3736ab3776dba1e6faf
+            Type: BaseDataVariableType
+            DataType: VariablePointer
+            Value: {"IdType":2,"Id":"a2fa3fb9ada84c5eb4c0d391b616d724","Namespace":18}
+          - Name: Value
+            Id: g=052dfbc399ce01eab0e80cab57f6fa81
+            Type: BaseDataVariableType
+            DataType: String
+            Value: ""
+            Children:
+            - Name: DynamicLink
+              Id: g=a11bc450972d4b5b87a54910c6d687dd
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{NodeId:ns=18;g=7e02eb77-906f-61b5-1712-1b4363408893}"
+              Children:
+              - Name: Mode
+                Id: g=e653670295d2aed5e04f67550609b070
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                Value: 2
+          - Name: ArrayIndex
+            Id: g=4ef5293bf74e391966f516d5bda4f1a0
+            Type: BaseDataVariableType
+            DataType: UInt32
+            ValueRank: ScalarOrOneDimension
+            Value: 0
+      - Name: MethodContainerFTRemoteAccessWidgetSupervisorId
+        Id: g=10e0b1e6c0a4d1f5071b599594f703a8
+        Type: BaseObjectType
+        Children:
+        - Name: ObjectPointer
+          Id: g=f212d835d71d5ceff0468bc32c1e6260
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"Id":22,"Namespace":3}
+          Children:
+          - Name: Kind
+            Id: g=5349a17bd29e5ef6318f4bd8ff58073a
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: Method
+          Id: g=bd5f9a0d9561bd70b3b89401d9e1adff
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Set"
+        - Name: InputArguments
+          Id: g=7a0f321cb376320ff5f5236721599ea3
+          Type: BaseObjectType
+          Children:
+          - Name: VariableToModify
+            Id: g=1edc66a043f7a6f6d927dd2a3b15bf40
+            Type: BaseDataVariableType
+            DataType: VariablePointer
+            Value: {"IdType":2,"Id":"ba6c88456c1947b58f04cc05a7281caf","Namespace":18}
+          - Name: Value
+            Id: g=eb6224ed9be93db55e4515915e4dc253
+            Type: BaseDataVariableType
+            DataType: ByteString
+            Value: ""
+            Children:
+            - Name: DynamicLink
+              Id: g=0d3d494d48e7ea1bd84e76dab36d4228
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{NodeId:ns=18;g=68a4849c-ebc2-e61e-e67c-b456407c52c8}"
+              Children:
+              - Name: Mode
+                Id: g=5b48f78ccba4fdb0e9dd420c09fc93d9
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                Value: 2
+          - Name: ArrayIndex
+            Id: g=084ca1fbff339124ebcedf4c4141c5bc
+            Type: BaseDataVariableType
+            DataType: UInt32
+            ValueRank: ScalarOrOneDimension
+            Value: 0
+      - Name: MethodContainerFTRemoteAccessWidgetConnectionPending
+        Id: g=e1871d88eae81069948b2bca77e2df75
+        Type: BaseObjectType
+        Children:
+        - Name: ObjectPointer
+          Id: g=e04d961b494892c6619d7f44aeb4570f
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"Id":22,"Namespace":3}
+          Children:
+          - Name: Kind
+            Id: g=865bdb49ff4de1ee8074c768394960c7
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: Method
+          Id: g=5600ba2cc42699aa3ec02242c7fdb06e
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Set"
+        - Name: InputArguments
+          Id: g=a1154624f2df393e3dceb8241e1e6e3d
+          Type: BaseObjectType
+          Children:
+          - Name: VariableToModify
+            Id: g=502362447b45fdbd8fed6a6e56c03d56
+            Type: BaseDataVariableType
+            DataType: VariablePointer
+            Value: {"IdType":2,"Id":"8e5d66d85a6a4d2bb59303d527c51619","Namespace":18}
+          - Name: Value
+            Id: g=e49baa84da0e9451e93aaa90359c149f
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: ArrayIndex
+            Id: g=23807d459004ab50b9406618c4305c50
+            Type: BaseDataVariableType
+            DataType: UInt32
+            ValueRank: ScalarOrOneDimension
+            Value: 0
+    - Name: EventArguments
+      Id: g=7fb2d34093a6567ce994fe63f211e52c
+      Type: RemoteConnectionRequestEvent
+      Children:
+      - Name: SupervisorId
+        Id: g=68a4849cebc2e61ee67cb456407c52c8
+        Type: BaseDataVariableType
+        DataType: ByteString
+        Value: ""
+      - Name: Username
+        Id: g=8c7cfbd5afd72d390b2d0fd8a706fda9
+        Type: BaseDataVariableType
+        DataType: String
+        Value: ""
+      - Name: IpAddress
+        Id: g=7e02eb77906f61b517121b4363408893
+        Type: BaseDataVariableType
+        DataType: String
+        Value: ""
+      - Name: EventId
+        Id: g=e4c2f83abe29999b9d327a0fd2973c45
+        Type: PropertyType
+        DataType: ByteString
+        Value: ""
+      - Name: EventType
+        Id: g=4f9beeabf7b10bcf934f286c51d8cd3f
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: SourceNode
+        Id: g=8a6308d0a4a2403a7e1330742ede389c
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: SourceName
+        Id: g=d76daeb0ab9ca087b487644376e10341
+        Type: PropertyType
+        DataType: String
+        Value: ""
+      - Name: Time
+        Id: g=2edee06b2e402e0f2bc81b6245964cb9
+        Type: PropertyType
+        DataType: UtcTime
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: ReceiveTime
+        Id: g=4d65187a9a3ff3346a91976ce932b0e4
+        Type: PropertyType
+        DataType: UtcTime
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: Message
+        Id: g=ef1eeb7719aaf9cd7b3c6399b4bb5006
+        Type: PropertyType
+        DataType: LocalizedText
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      - Name: Severity
+        Id: g=723f45c7f5647d0387482bade04ef649
+        Type: PropertyType
+        DataType: UInt16
+        Value: 0
+  - Name: FTRemoteAccessWidgetUsername
+    Id: g=4d410d91e4414682a8403bcbb906403e
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: FTRemoteAccessWidgetIPAddress
+    Id: g=a2fa3fb9ada84c5eb4c0d391b616d724
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: FTRemoteAccessWidgetSupervisorId
+    Id: g=ba6c88456c1947b58f04cc05a7281caf
+    Type: BaseDataVariableType
+    DataType: ByteString
+    Value: ""
+  - Name: FTRemoteAccessWidgetConnectionPending
+    Id: g=8e5d66d85a6a4d2bb59303d527c51619
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false

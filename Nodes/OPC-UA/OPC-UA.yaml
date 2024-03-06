@@ -1,0 +1,98 @@
+Name: 'OPC-UA'
+Id: g=a4370f2421c9c1d7b19461764e785f17
+Type: OPCUACategoryFolder
+Children:
+- Name: OPCUAServer
+  Id: g=52bd199e8564310850d0fc7328d28086
+  Type: OPCUAServer
+  Children:
+  - Name: EndpointURL
+    Id: g=6fa3ea2a7bb9a7ecc70213c39382a7e8
+    Type: PropertyType
+    DataType: ResourceUri
+    Value: "opc.tcp://localhost:59100"
+  - Name: NodesToPublish
+    Id: g=61034bd9bf05cac74dc6f2ee5a42d484
+    Type: BaseObjectType
+    Children:
+    - Name: Configuration1
+      Id: g=d52da9fb9929fbb87e84a0eb6ce13507
+      Type: NodesToPublishConfigurationEntry
+      Children:
+      - Name: Nodes
+        Id: g=ac7f4baebbc7ee1b4b77b4d8447d67d3
+        Type: BaseObjectType
+        Children:
+        - Name: Node1
+          Id: g=c85335d9f06b8ade66a9f07d620a2dcd
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+          Children:
+          - Name: Kind
+            Id: g=0ff4eed95ffbf77b112138cbb859b281
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+          - Name: NodeClass
+            Id: g=4374f4b833a372701e6f31db53598d70
+            Type: PropertyType
+            DataType: NodePointerNodeClass
+            Value: 2
+      - Name: Users
+        Id: g=be3458ab8890cc18b655c377ebea9e95
+        Type: BaseObjectType
+        Children:
+        - Name: User1
+          Id: g=d9ad1fb330acaeeba037dae4a6d0b381
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+          Children:
+          - Name: Kind
+            Id: g=cd83d340883a203e0b1da51c26dc4c3a
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"Id":14,"Namespace":1}
+          - Name: NodeClass
+            Id: g=882164024f041b660693e525a50b44eb
+            Type: PropertyType
+            DataType: NodePointerNodeClass
+            Value: 0
+        - Name: User2
+          Id: g=0038883296ccf3b0cd248300d3362b4b
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+          Children:
+          - Name: Kind
+            Id: g=985b763fa66894578ba075ded7daac6c
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"Id":14,"Namespace":1}
+          - Name: NodeClass
+            Id: g=f638f56aa7c1d379edc20b09cee1d4d1
+            Type: PropertyType
+            DataType: NodePointerNodeClass
+            Value: 0
+      - Name: PublishDynamicConfiguration
+        Id: g=41d7054228342267e39d755bf31595f6
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+  - Name: MinimumMessageSecurityMode
+    Id: g=c13111ec803321544d2027910c0875a1
+    Type: PropertyType
+    DataType: MessageSecurityModeEnum
+    Value: 0
+  - Name: MinimumSecurityPolicy
+    Id: g=8c3c03c73232c50dd915ca46b4c0d515
+    Type: PropertyType
+    DataType: SecurityPolicyEnum
+    Value: 0
+  - Name: MaxNumberOfConnections
+    Id: g=9db6c859738c86f8effe6433df09449f
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 10
+  - File: RAEtherNet_IPDriver1/RAEtherNet_IPDriver1.yaml

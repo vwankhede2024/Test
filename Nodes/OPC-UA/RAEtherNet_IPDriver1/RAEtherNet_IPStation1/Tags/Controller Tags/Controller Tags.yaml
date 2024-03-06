@@ -1,0 +1,37 @@
+Name: Controller Tags
+Id: g=24680f2a762267d9166caf6184e64ddf
+Type: FolderType
+Children:
+- Name: OPC_UA_Test_1
+  Id: g=64a6a8f03ce3cb54af7722b0ce0f7101
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Id: g=e11eb309a229ccc623e143ee04ab1d79
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "OPC_UA_Test_1"
+- Name: OPC_UA_Test_2
+  Id: g=2f4c84a7c6dd0988232ed280aab55471
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Id: g=8834243822a86cf3a734f8c6f2632c8e
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "OPC_UA_Test_2"
+- Name: OPC_UA_Test_3
+  Id: g=3e7d97df68ca017c9acf2c29abceb396
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Id: g=0c4bf03434ed139368aa3106dad77885
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "OPC_UA_Test_3"

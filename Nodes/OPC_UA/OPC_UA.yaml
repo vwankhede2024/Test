@@ -1,0 +1,5 @@
+Name: OPC_UA
+Id: g=33395aaeea07f784a2373858f7444aad
+Type: FolderType
+Children:
+- File: Type/Type.yaml

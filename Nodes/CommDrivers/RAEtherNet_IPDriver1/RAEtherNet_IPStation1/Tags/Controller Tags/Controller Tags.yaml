@@ -1,0 +1,37 @@
+Name: Controller Tags
+Id: g=9887e981c587af6946603b3b0624e210
+Type: FolderType
+Children:
+- Name: SerialNo
+  Id: g=076d737df71d9f40990e5706127b245c
+  Type: RAEtherNetIPTag
+  DataType: String
+  Value: ""
+  Children:
+  - Name: SymbolName
+    Id: g=64ea422060543c68a946656ebe786038
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "SerialNo"
+- Name: PalletID
+  Id: g=e1a262805c409236629f73f34eb85407
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Id: g=27dd22a828782f33d3ef646d75a073a9
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PalletID"
+- Name: OrderNo
+  Id: g=0b35bab4d2a07cb5b394c51b910da138
+  Type: RAEtherNetIPTag
+  DataType: String
+  Value: ""
+  Children:
+  - Name: SymbolName
+    Id: g=aed07004d92d3a15fb2e75329984a820
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "OrderNo"

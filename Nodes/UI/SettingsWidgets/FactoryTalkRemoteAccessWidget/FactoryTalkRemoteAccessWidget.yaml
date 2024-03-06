@@ -1,0 +1,280 @@
+Name: FactoryTalkRemoteAccessWidget
+Id: g=15e256150b0dcbb282796f449d321b9f
+Type: FolderType
+Children:
+- Name: FTRemoteAccessWidget
+  Id: g=41382c57dc616862c1af276ff6942abc
+  Supertype: Screen
+  ReferenceType: HasComponent
+  Children:
+  - Name: HorizontalAlignment
+    Id: g=c4b5ad1eb14732aa9c084931617ee0c8
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+    Value: 0
+  - Name: VerticalAlignment
+    Id: g=f6250839cdec58cefc6a54b70bdfb905
+    Type: BaseVariableType
+    DataType: VerticalAlignment
+    ModellingRule: Optional
+    Value: 0
+  - Name: Width
+    Id: g=ec17be2afb407625323a1ba85871701a
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 400.0
+  - Name: Height
+    Id: g=1a343e066bb25e7512d030ca55b64341
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 250.0
+  - Name: MainNavigationPanel
+    Id: g=9c2e0f72071c70f361f20fb0c63a0d25
+    Type: NavigationPanel
+    Children:
+    - Name: Panels
+      Id: g=3baf37f8f50d64a992a309caa18daac9
+      Type: BaseObjectType
+      Children:
+      - Name: ConnectionPanel
+        Id: g=b88d28fe744091fa0fd7743ea27aabc5
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Id: g=e1f06f25ea224d1282e6ce1ccb480de3
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          Children:
+          - Name: ConditionalConverter1
+            Id: g=533fd6fee0f6a2f6de357d57e3436fa5
+            Type: ConditionalConverter
+            Children:
+            - Name: Condition
+              Id: g=abbd3d1dcee60bd7e162a997693561f7
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ReferenceType: HasSource
+              Value: false
+              Children:
+              - Name: ExpressionEvaluator1
+                Id: g=d5754efd5ae0d47cc1b05ab8155ec5e9
+                Type: ExpressionEvaluator
+                Children:
+                - Name: Expression
+                  Id: g=1962765541598e0c760f1bc173d85cad
+                  Type: BaseDataVariableType
+                  DataType: String
+                  ReferenceType: HasParameter
+                  ModellingRule: Optional
+                  Value: "{0} && {1}!={2}"
+                - Name: ns=3;Source0
+                  Id: g=b64070c48bebd92ccdfdf104c6e5b6c5
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Id: g=b40c6cd2ebe9f5217389a629ea4dfb17
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../../../../../FTRemoteAccessWidgetDataObject/IncomingConnectionRequest"
+                - Name: ns=3;Source1
+                  Id: g=324542fdfb70e8caadb50aefc989659e
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Id: g=a906e3fe88f53fe900cc00f73a9fbdef
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../../../../CurrentPanel@BrowseName"
+                - Name: ns=3;Source2
+                  Id: g=7ef425522092933bfd9e72d6015700c7
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Id: g=f407921a347312cd2fd364f29a0f91aa
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "{NodeId:ns=18;g=e348b14d-bc70-3568-8714-c7ced8a72128}@BrowseName"
+            - Name: TrueValue
+              Id: g=c4ab4b4796931d4fb231bbf3cc3185f2
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: {"NamespaceIndex":18,"TextId":"ConnectionPanelTitleAsterisk"}
+            - Name: FalseValue
+              Id: g=b8f67f3a487b59abedbf37915c236bb2
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: {"NamespaceIndex":18,"TextId":"ConnectionPanelTitle"}
+        - Name: Panel
+          Id: g=19e9ac8b83266d0bc4e417ec01b02a89
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"IdType":2,"Id":"e348b14dbc7035688714c7ced8a72128","Namespace":18}
+          Children:
+          - Name: Kind
+            Id: g=c91cb259e1b7d13cc3f7f199bd703e51
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"Id":71,"Namespace":5}
+        - Name: AliasNode
+          Id: g=63f6bce6314397de91c92026a17c28d8
+          Type: BaseDataVariableType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+          Children:
+          - Name: DynamicLink
+            Id: g=a8e10bf69a0039e9459981c7402002ca
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../FTRemoteAccessWidgetDataObject@NodeId"
+      - Name: RequestAssistancePanel
+        Id: g=906747e3d30b9ec7f695483ad4b130ad
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Id: g=27abd288d3da9cc78bf613b9edfe376b
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":18,"TextId":"AssistancePanelTitle"}
+        - Name: Panel
+          Id: g=d31b78e8c33382edde2d29e57242456c
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"IdType":2,"Id":"77122192dcccfaa39d1e78d7bd27e222","Namespace":18}
+          Children:
+          - Name: Kind
+            Id: g=9314e4f87aa8f6d5f63e0e3bcc038d89
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"Id":71,"Namespace":5}
+        - Name: AliasNode
+          Id: g=6b30138e184cbd97138f63f257093568
+          Type: BaseDataVariableType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+          Children:
+          - Name: DynamicLink
+            Id: g=364bcef713e06f3a20219e2b3951f9b3
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../FTRemoteAccessWidgetDataObject@NodeId"
+    - Name: CurrentPanel
+      Id: g=ab03742347e81ce125003cdce5ab4559
+      Type: NodePointer
+      DataType: NodeId
+      AccessLevel: Read
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: Kind
+        Id: g=f81b11c6f07996143fcfbe8bcfb3a0ec
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":6,"Namespace":5}
+    - Name: HorizontalAlignment
+      Id: g=3f3560ed019eebcfad5028340077b63d
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Id: g=d29a529c87b786d8d962caf9c0995810
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: CurrentTabIndex
+      Id: g=71da2b324288131a45c4ce2e2ebed741
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Class: Reference
+      Target: ns=5;i=1181
+    - Class: Reference
+      Target: ns=5;i=1183
+  - Name: FTRemoteAccessWidgetDataObject
+    Id: g=1d1dba82455338d51469fd5b0f5ab2c7
+    Type: FTRemoteAccessWidgetDataObject
+    Children:
+    - Name: IncomingConnectionRequest
+      Id: g=e8131ca7d0c36a96a2bf3f448554de6f
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: Username
+      Id: g=66d54a7956ae344848b87a48f7a6dcba
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: IpAddress
+      Id: g=683f8db39573168db3d686949542fe2a
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: SupervisorId
+      Id: g=7a74506f6798d2504e7e6a40b03439a1
+      Type: BaseDataVariableType
+      DataType: ByteString
+      Value: ""
+    - Name: FTRemoteAccessNode
+      Id: g=66993b9fc33ae5d302215f1b72444f7a
+      Type: Alias
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: Kind
+        Id: g=c30dc510fd9abecdb8ccbff05e2c309b
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":62,"Namespace":16}
+      - Name: DynamicLink
+        Id: g=ef901c77fd4a02003483b0c0d77c67ab
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../FTRemoteAccessNode@NodeId"
+        Children:
+        - Name: Mode
+          Id: g=dd485de74b3b4a2edfa71b3b810d8abe
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+  - Name: IncomingConnectionReceiverLogic
+    Id: g=a7a49f9a7d65f33e0cf646c58c983edf
+    Type: NetLogic
+  - Name: FTRemoteAccessNode
+    Id: g=21b132858a0f3307db03a0d4e7365e60
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"f437673fcc988bca3673e6d9346ba174","Namespace":18}
+    Children:
+    - Name: Kind
+      Id: g=bb45297ce973288ce48627dbf4bfe351
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":62,"Namespace":16}
+  - Name: FTRemoteAccessWidgetSetupLogic
+    Id: g=1485d6850d3d649ee19fb1669d81ae9a
+    Type: NetLogic
+    Children:
+    - Name: BehaviourStartPriority
+      Id: g=709c1e125486e528522510b79342f1e0
+      Type: BehaviourStartPriorityVariableType
+      DataType: Byte
+      Value: 180
+    - Class: Method
+      Name: SetupFTRemoteAccessNode
+      Id: g=2adaa7f834032d625e252403a47c0847
+- File: FTRemoteAccessWidgetComponents/FTRemoteAccessWidgetComponents.yaml

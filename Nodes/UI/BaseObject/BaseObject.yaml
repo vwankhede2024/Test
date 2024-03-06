@@ -1,0 +1,160 @@
+Name: BaseObject
+Id: g=94a8a2e92d87a9fcc5a26fd7536e94a6
+Type: FolderType
+Children:
+- Name: BasePanel
+  Id: g=3561a0958643f8fc93758d6e0b3935b0
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Id: g=70c4a67339133119a22cc94b075603b1
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Height
+    Id: g=f6dd2ef76026f75056fe7dec14a89e1e
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 450.0
+  - Name: CircularGauge1
+    Id: g=4c26c34231bae5bb6015f4cdfe8f0f45
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Id: g=013141e8f5ad104a93d71c846fb37c73
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 0.0
+    - Name: MinValue
+      Id: g=4404d14f2b9d41e35a886fc51c6ad255
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 0.0
+    - Name: MaxValue
+      Id: g=6d38f39ce9bb7a95d173f3bc739484d5
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 300.0
+    - Name: WarningZones
+      Id: g=8581589c7f279cf9282c8468ac4e7ba5
+      Type: BaseObjectType
+    - Name: Width
+      Id: g=58889ac1197a5beccc6c45232242b839
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 210.0
+    - Name: Height
+      Id: g=41cfc886b47888bb8fcae1dd8deb6609
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 210.0
+    - Name: LeftMargin
+      Id: g=fa413a7ce533bb04e4cf892d944ea49c
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 40.0
+    - Name: TopMargin
+      Id: g=76aae87724dd50b5bb7858be0864f740
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+  - Name: Label1
+    Id: g=4cf091185b1d066fc8f4141a88d78901
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=cad4433043ccadae12cf67c68b4d1d56
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Speed:"}
+    - Name: LeftMargin
+      Id: g=7bb6b21593f4fed869b8b5a033efc8d0
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 114.0
+    - Name: TopMargin
+      Id: g=09dd0c31f5fd6dfca42d5fae81261884
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 256.0
+  - Name: Label2
+    Id: g=486f8590967ef730bd7cbcb8b02890f2
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=3451a248aecba99b09aea4e05c222b7c
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: StringFormatter1
+        Id: g=eda2d64aeea1e30ea03ab2beb681b93a
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Id: g=c38f0b4bd05eb38d64ac2a4faf07168e
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"","Text":"{0:n1}"}
+        - Name: ns=3;Source0
+          Id: g=2111a5954b5cc951a83a2c1c9374b20b
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=bfac3ead21771aade6ac8b89f4503bb3
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../CircularGauge1/Value"
+    - Name: LeftMargin
+      Id: g=e06e28879daff01671122c71a7494eca
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 154.0
+    - Name: TopMargin
+      Id: g=6dc9f788d1d3d884c8a43fc676ca093a
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 256.0
+  - Name: Label3
+    Id: g=f3321718329cdd70c63e432165c928fd
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=fca179badf18e60475dcec8cbc9da2b4
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: DynamicLink
+        Id: g=6f3beada92446eb4ca233091845479f3
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../..@BrowseName"
+    - Name: LeftMargin
+      Id: g=83c2839a0eef1d446adfe5d521cb7f47
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 135.0
+    - Name: TopMargin
+      Id: g=36b63ab22523e0498a888bd7dcbe718c
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 276.0
